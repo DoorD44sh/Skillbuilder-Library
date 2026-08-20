@@ -1,14 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillbuilder Library</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Skillbuilder Library</h1>
+    <aside class="sidebar" id="sidebar">
+        <div class="logo">
+            <span>SB</span>
+            <strong>Skillbuilder</strong>
+        </div>
+
+        <nav>
+            <button class="nav-item active" data-page="home">Home</button>
+            <button class="nav-item" data-page="movesets">Movesets</button>
+            <button class="nav-item" data-page="meshes">Meshes</button>
+            <button class="nav-item" data-page="visual">Visual</button>
+            <button class="nav-item" data-page="particles">Particle Emitter</button>
+            <button class="nav-item" data-page="sound">Sound</button>
+            <button class="nav-item" data-page="favorites">Favorites</button>
+            <button class="nav-item" data-page="settings">Settings</button>
+        </nav>
+
+        <button class="collapse-btn" id="collapseBtn">
+            Collapse
+        </button>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <button class="mobile-menu" id="mobileMenu">☰</button>
+
+            <div class="top-buttons">
+                <button class="mode-button active">Skillbuilder</button>
+                <button class="mode-button" id="studioButton">Studio</button>
+            </div>
+        </header>
+
+        <section id="pageContent">
+            <h1>Welcome to Skillbuilder</h1>
+            <p>Your personal Skill Builder library.</p>
+        </section>
+
+    </main>
+
+    <nav class="mobile-nav">
+        <button data-page="home">Home</button>
+        <button data-page="movesets">Movesets</button>
+        <button data-page="meshes">Meshes</button>
+        <button data-page="sound">Sound</button>
+        <button data-page="favorites">Favorites</button>
+    </nav>
 
     <script src="app.js"></script>
+
 </body>
 </html>
