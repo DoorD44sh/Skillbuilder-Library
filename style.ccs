@@ -1,1 +1,5 @@
-
+body {
+    background: #111318;
+    color: white;
+    font-family: Arial, sans-serif;
+}
