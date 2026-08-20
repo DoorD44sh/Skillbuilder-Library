@@ -131,6 +131,28 @@ button {
     display: none;
 }
 
+.sidebar.collapsed {
+    width: 72px;
+}
+
+.sidebar.collapsed .logo strong,
+.sidebar.collapsed .nav-item,
+.sidebar.collapsed .collapse-btn {
+    font-size: 0;
+}
+
+.sidebar.collapsed .logo {
+    justify-content: center;
+}
+
+.sidebar.collapsed .nav-item {
+    height: 42px;
+}
+
+.main-content:has(+ .sidebar.collapsed) {
+    margin-left: 72px;
+}
+
 @media (max-width: 700px) {
     .sidebar {
         display: none;
